@@ -1,0 +1,38 @@
+CREATE SCHEMA `estoque_db` ;
+CREATE TABLE `estoque_db`.`tb_estoque` (
+);
+CREATE TABLE `estoque_db`.`tb_estoque` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `quantidade` INT UNSIGNED NOT NULL,
+  `preco` DOUBLE UNSIGNED NOT NULL,
+  `numero` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sapato Social',2,159.90,41);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sapato Social',3,159.90,40);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sandalha',2,89.90,36);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sandalha',1,89.90,38);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sandalha',1,89.90,37);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Tenis',2,265.90,41);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Tenis',1,265.90,43);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Tenis',3,265.90,40);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Chinelo',1,54.90,39);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Chinelo',1,54.90,37);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Chinelo',2,54.90,40);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Meias',4,15.00,39);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Meias',2,15.00,37);
+
+INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Meias',1,15.00,42);
