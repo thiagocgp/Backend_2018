@@ -17,7 +17,7 @@ O trabalho consiste no desenvolvimento de duas API's independentes, uma para o c
 
 __Descrição__
 
-API responsável por fornecer e guardar dados relativos ao estoque da Sapataria. Esta API foi feita usando a linguagem JAVA na Eclipse IDE. Foi utilizado o Maven para o gerenciamento de repositórios e a biblioteca Jersey para os serviços REST. O banco de dados utilizado foi o MySql e fazendo a conexão com mesmo através do JDBC.
+API responsável por fornecer e guardar dados relativos ao estoque da Sapataria. Esta API foi feita usando a linguagem JAVA na Eclipse IDE. Foi utilizado o Maven para o gerenciamento de repositórios e a biblioteca Jersey para os serviços REST. O banco de dados utilizado foi o MySql e fazendo a conexão com mesmo através do JDBC. O servidor utilizado para testes foi o Tomcat.
 
 O projeto desta API está na pasta (Estoque).
 
@@ -41,19 +41,19 @@ __Obter dados do estoque__
 
 - Todo estoque
 
-  GET - http://localhost/Estoque
+  GET - http://localhost:8080/Estoque
   
 - Por ID
 
-  GET - http://localhost/Estoque/id/[id]
+  GET - http://localhost:8080/Estoque/id/[id]
   
 - Por Nome
 
-  GET - http://localhost/Estoque/nome/[nome]
+  GET - http://localhost:8080/Estoque/nome/[nome]
   
  __Adicionar produto no estoque__
   
-  POST - http://localhost/Estoque
+  POST - http://localhost:8080/Estoque
    
    _Exemplo:_
    
@@ -68,11 +68,11 @@ __Obter dados do estoque__
 
 __Editar um produto no estoque__
 
-   PUT - http://localhost/Estoque/id/[id]
+   PUT - http://localhost:8080/Estoque/id/[id]
   
    _Exemplo:_
    
-   http://localhost/Estoque/id/6
+   http://localhost:8080/Estoque/id/6
    
   ```json
    {
@@ -85,7 +85,7 @@ __Editar um produto no estoque__
    
 __Deletar um produto no estoque__
 
-  DELETE - http://localhost/Estoque/id/[id]
+  DELETE - http://localhost:8080/Estoque/id/[id]
   
   
   ## API de Loja
