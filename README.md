@@ -54,7 +54,7 @@ __Obter dados do estoque__
   
  __Adicionar produto no estoque__
   
-   POST - http://localhost/Estoque
+  - POST - http://localhost/Estoque
    
    _Exemplo:_
    
@@ -69,7 +69,7 @@ __Obter dados do estoque__
 
 __Editar um produto no estoque__
 
-  PUT - http://localhost/Estoque/id/[id]
+   - PUT - http://localhost/Estoque/id/[id]
   
    _Exemplo:_
    
@@ -86,7 +86,7 @@ __Editar um produto no estoque__
    
 __Deletar um produto no estoque__
 
-  DELETE - http://localhost/Estoque/id/[id]
+  - DELETE - http://localhost/Estoque/id/[id]
   
   
   ## API de Vendas
