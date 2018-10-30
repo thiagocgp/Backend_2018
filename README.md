@@ -88,7 +88,12 @@ __Deletar um produto no estoque__
   DELETE - http://localhost/Estoque/id/[id]
   
   
-  ## API de Vendas
+  ## API de Loja
   
-  
-  
+  __Descrição__
+
+API responsável por fornecer e guardar dados relativos as vendas da Sapataria. Esta API foi feita usando a linguagem javascript utilizando nodejs. Foi utilizado os pacotes ExpressJS, Mongoose e Body-parser. O banco de dados utilizado foi o mongodb utilizando o serviço do mLab (https://mlab.com).
+
+O projeto desta API está na pasta (loja).
+
+Esta API retorna os dados através de JSON. 
