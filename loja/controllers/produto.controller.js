@@ -24,7 +24,7 @@ exports.criar = function (req, res) {
     })
 };
 
-exports.detalhar = function (req, res) {
+exports.buscar = function (req, res) {
     Produto.findById(req.params.id, function (err, produto){
         if(err) return next(err);
         res.send(produto);
@@ -42,5 +42,13 @@ exports.excluir = function (req, res) {
     Produto.findByIdAndRemove(req.params.id, function (err) {
         if (err) return next(err);
         res.send('Excluido com sucesso');
+    })
+};
+
+exports.compra = function (req, res) {
+    var query = { nome: req.params.nome };
+    Produto.find(query, function (err, produto) {
+        if(err) return next(err);
+        res.send(produto + ' ' + req.params.quant);
     })
 };
