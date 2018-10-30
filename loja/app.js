@@ -16,6 +16,12 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use('/loja', produto);
+app.get('/', function(req, res){
+    res.redirect('/loja');
+});
+app.get('/loja', function(req, res){
+    res.send('Bem vindo a loja');
+});
 
 var port = 1234;
 
