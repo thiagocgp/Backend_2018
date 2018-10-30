@@ -8,10 +8,9 @@ Alunos:
 
 # SAPATARIA - Vendas e Controle de Estoque
 
-Descrição do trabalho:
+__Descrição do trabalho__
 
-
-
+O trabalho consiste no desenvolvimento de duas API's independentes, uma para o controle de estoque e outra para o controle de vendas de uma loja de sapatos. Uma suposta UI consome dados da API de vendas, a qual consome dados fornecidos pela API de Estoque. A UI também pode ser capaz de alterar os dados da API de estoque diretamente.
 
 
 ## API de Controle do Estoque
@@ -54,7 +53,7 @@ __Obter dados do estoque__
   
  __Adicionar produto no estoque__
   
-  - POST - http://localhost/Estoque
+  POST - http://localhost/Estoque
    
    _Exemplo:_
    
@@ -69,7 +68,7 @@ __Obter dados do estoque__
 
 __Editar um produto no estoque__
 
-   - PUT - http://localhost/Estoque/id/[id]
+   PUT - http://localhost/Estoque/id/[id]
   
    _Exemplo:_
    
@@ -86,7 +85,7 @@ __Editar um produto no estoque__
    
 __Deletar um produto no estoque__
 
-  - DELETE - http://localhost/Estoque/id/[id]
+  DELETE - http://localhost/Estoque/id/[id]
   
   
   ## API de Vendas
