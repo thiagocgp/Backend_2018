@@ -97,3 +97,30 @@ API responsável por fornecer e guardar dados relativos as vendas da Sapataria. 
 O projeto desta API está na pasta (loja).
 
 Esta API retorna os dados através de JSON. 
+
+### Pré Requisitos
+
+Este projeto utiliza algumas tecnologias que devem ser instaladas antes de ser executado.
+
+* [Node](https://nodejs.org/en/download/package-manager/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [NPM](https://docs.npmjs.com/cli/install) - NPM is the package manager for JavaScript and the world’s largest software registry.
+
+__Instalação__
+
+Através do terminal dentro da pasta loja
+
+```
+npm install
+```
+Para instalar as dependências citadas anteriormente (ExpressJS, Mongoose e Body-parser)
+```
+npm install --save express body-parser mongoose
+```
+Para iniciar o serviço loja
+```
+node app.js
+```
+Acesso ao serviço pelo navegador
+```
+https://localhost:1234/
+```
