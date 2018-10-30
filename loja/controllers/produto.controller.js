@@ -1,7 +1,11 @@
 const Produto = require('../models/produto');
 
-exports.teste = function(req, res){
-    res.send('Saudações do teste controller');
+exports.registros = function(req, res){
+    // res.send('Saudações do teste controller');
+    Produto.find(function (err, produtos){
+        if(err) return next(err);
+        res.send(produtos);
+    })
 };
 
 exports.criar = function (req, res) {
