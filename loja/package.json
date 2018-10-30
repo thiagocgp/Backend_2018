@@ -1,0 +1,19 @@
+{
+  "name": "loja",
+  "version": "1.0.0",
+  "description": "loja",
+  "main": "index.js",
+  "scripts": {
+    "teste": "echo \"Error: no teste specified\" && exit 1"
+  },
+  "author": "italo",
+  "license": "ISC",
+  "keywords": [
+    "loja"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7"
+  }
+}
