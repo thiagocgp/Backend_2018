@@ -1,6 +1,5 @@
 CREATE SCHEMA `estoque_db` ;
-CREATE TABLE `estoque_db`.`tb_estoque` (
-);
+
 CREATE TABLE `estoque_db`.`tb_estoque` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
@@ -9,6 +8,7 @@ CREATE TABLE `estoque_db`.`tb_estoque` (
   `numero` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+  
 INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sapato Social',2,159.90,41);
 
 INSERT INTO `estoque_db`.`tb_estoque`(`nome`,`quantidade`,`preco`,`numero`)VALUES('Sapato Social',3,159.90,40);
