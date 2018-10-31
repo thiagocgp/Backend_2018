@@ -52,3 +52,8 @@ exports.compra = function (req, res) {
         res.send(produto + ' ' + req.params.quant);
     })
 };
+
+/* */
+
+
+
