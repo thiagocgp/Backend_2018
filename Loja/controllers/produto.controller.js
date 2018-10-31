@@ -50,10 +50,9 @@ exports.compra = function (req, res) {
     Produto.find(query, function (err, produto) {
         if(err) return next(err);
         res.send(produto + ' ' + req.params.quant);
+	//req.params.quant
     })
 };
-
-/* */
 
 
 
